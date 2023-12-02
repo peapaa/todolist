@@ -1,0 +1,16 @@
+<div class="edit-form">
+<form class="single-task-form" method="POST" action="/home/{{task._id}}?_method=PUT"   >
+  <h4>Edit Task</h4>
+  <div class="form-control">
+    <label>Task ID</label>
+    <p class="task-edit-id">: {{task._id}}</p>
+  </div>
+  <div class="form-control" >
+    <label for="name">Name:</label>
+    <input type="text" name="name" value="{{task.name}}" class="task-edit-name" />
+  </div>
+  <button type="submit" class="block btn task-edit-btn">edit</button>
+</form>
+<a href="/home" class="btn back-link">back to tasks</a>
+</div>    
+

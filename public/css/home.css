@@ -1,0 +1,33 @@
+.people_list {
+    font-size: 2rem;
+}
+
+.icon-edit {
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+
+.icon-delete {
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.task {
+    width: 220px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    padding: 6px 10px;
+    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.name-task {
+
+}
+
+.icon-edit {
+    margin: 0 6px;
+}

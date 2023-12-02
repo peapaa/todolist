@@ -1,0 +1,27 @@
+<ul class="people_list">
+  {{#each tasks}}
+    <li style="list-style: none" class="task">
+        <span class="name-task">{{this.name}}</span> 
+        <div> 
+          <a href="/home/{{this._id}}/edit"><i class="fa-solid fa-pen-to-square icon-edit"></i></a> 
+          <a href="" data-id = "{{this._id}}" class="iconDelete"><i class="fa-solid fa-trash icon-delete "></i></a> 
+        </div>
+        </li>
+  {{/each}}
+</ul>
+
+<form action="" method="POST" id="delete-task"></form>
+<script>
+    var deleteForm = document.getElementById('delete-task');
+    var deleteTask = document.querySelectorAll('.iconDelete');
+    var taskId;
+    deleteTask.forEach(icon => {
+        icon.addEventListener('click', function(event) {
+            event.preventDefault();
+            const taskId = icon.getAttribute('data-id');
+            deleteForm.action = '/home/' + taskId + '?_method=delete';
+            deleteForm.submit();
+    });
+
+});
+</script>

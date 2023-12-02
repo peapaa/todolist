@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/edit-page.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/main.css">
+    
+</head>
+<body>
+    <div class="app">
+        <div class="header">
+            {{!-- {{> header}} --}}
+        </div>
+        <div class="container">
+            <form class="task-form" action="/home" method="post">
+                <span>Task Manager</span>
+                <div class="form-control">
+                    <input
+                    type="text"
+                    name="name"
+                    class="task-input"
+                    placeholder="task name input"
+                    />
+                    <button type="submit" class="btn submit-btn">submit</button>
+                </div>
+            </form>  
+
+            {{{ body }}}
+        </div>
+
+        <div class="footer">
+             {{!-- {{> footer}} --}}
+        </div>
+    </div>
+
+</body>
+
+</html>
